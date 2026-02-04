@@ -113,3 +113,77 @@ body {
     width: 90%;
   }
 }
+/* HERO BACKGROUND */
+.hero-bg {
+  height: 75vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("../images/village.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+}
+
+.hero-overlay h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* INFO SECTION */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e8f8f5, #fefefe);
+}
+
+.info-card {
+  background: white;
+  width: 280px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+.info-card h3 {
+  color: #1e8449;
+  margin-bottom: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-bg {
+    height: 60vh;
+  }
+
+  .hero-overlay h2 {
+    font-size: 24px;
+  }
+
+  .info-card {
+    width: 90%;
+  }
+}
+
