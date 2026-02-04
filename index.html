@@ -15,7 +15,7 @@
 <body>
 
     <nav class="bg-[#2d4635] text-white py-4 px-8 flex justify-between items-center sticky top-0 z-50 shadow-md">
-        <h1 class="text-2xl font-bold serif text-[#e9bc66]">Baniyapar Saiyad Tahir</h1>
+        <h1 class="text-2xl font-bold serif text-yellow-600">बनियापार सैयद ताहिर (Baniyapar Saiyad Tahir) </h1>
         <div class="hidden md:flex space-x-8 text-sm font-medium">
             <a href="#" class="hover:text-[#e9bc66] border-b-2 border-[#e9bc66]">Home</a>
             <a href="#" class="hover:text-[#e9bc66]">About Our Village</a>
@@ -28,8 +28,10 @@
     <header class="m-6 rounded-3xl overflow-hidden shadow-2xl">
         <div class="hero-gradient h-[500px] flex items-end p-12">
             <div class="text-white max-w-2xl">
-                <h2 class="text-5xl font-bold serif mb-4">Baniyapar Saiyad Tahir: Parampara aur Pragati ka Sangam</h2>
-                <p class="text-xl opacity-90">Where Tradition Meets Progress. A legacy of culture and agriculture.</p>
+                <h2 class="text-6xl font-bold serif mb-30 text-blue-300">बनियापार सैयद ताहिर</h2>				
+				<h2 class="text-2xl font-bold serif mb-28 text-green-300 opacity-60">रुढ़िवादी परम्पराओं को छोड़ते हुए एक नए प्रगतिशील गांव की ओर...</h2>
+				<p class="text-xl text-green-500 opacity-90">जहाँ परंपरा और प्रगति का संगम है।</p>
+				<p class="text-xl text-green-500 opacity-90">संस्कृति और कृषि की विरासत।</p>
             </div>
         </div>
     </header>
@@ -51,8 +53,8 @@
                 <div class="bg-[#f3f6f4] p-6 rounded-2xl border-l-4 border-[#2d4635]">
                     <h4 class="font-bold text-[#2d4635] flex items-center mb-3">📞 Important Contacts</h4>
                     <ul class="text-sm space-y-2 text-gray-700">
-                        <li><strong>Pradhan:</strong> +91 98765-XXXXX</li>
-                        <li><strong>Lekhpal:</strong> +91 94150-XXXXX</li>
+                        <li><strong>Pradhan:</strong> +91 9415830867 (श्री हरिनारायण यादव)</li>
+                        <li><strong>Lekhpal:</strong> +91 7667785605 (श्री मनीष मिश्रा)</li>
                         <li><strong>Police:</strong> 112 / 100</li>
                     </ul>
                 </div>
@@ -76,10 +78,38 @@
                 
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <h4 class="font-bold mb-4">📜 Govt Schemes</h4>
-                    <ul class="text-xs space-y-3 text-blue-600 underline">
-                        <li><a href="#">PM-KISAN Yojana</a></li>
-                        <li><a href="#">MGNREGA Updates</a></li>
-                        <li><a href="#">Jal Jeevan Mission</a></li>
+                    <ul class="text-2xs space-y-3 text-blue-600 underline">
+                        <li class="hover:translate-x-1 transition-transform">
+						<a href="https://pmkisan.gov.in/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+						➔ पी एम किशान योजना 
+						<span class="text-[10px] m1-1 bg-blue-100 px-1 rounded"></span>
+						</a>
+						</li>
+						<li class="hover:translate-x-1 transition-transform">
+						<a href="https://nrega.dord.gov.in/MGNREGA_new/Nrega_home.aspx" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+						➔ मनरेगा अपडेट
+						<span class="text-[10px] ml-1 bg-blue-100 px-1 rounded"></span>
+						</a>
+						</li>
+						<li class="hover:translate-x-1 transition-transform">
+						<a href="https://jaljeevanmission.gov.in/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+						➔ जल जीवन मिशन 
+						<span class="text-[10px] ml-1 bg-blue-100 px-1 rounded"></span>
+						</a>
+						</li>
+						<li class="hover:translate-x-1 transition-transform">
+						<a href="https://voters.eci.gov.in/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+						➔ वोटर सेवा पोर्टल 
+						<span class="text-[10px] ml-1 bg-blue-100 px-1 rounded"></span>
+						</a>
+						</li>
+						<li class="hover:translate-x-1 transition-transform">
+						<a href="https://edistrict.up.gov.in/edistrictup/Index2.aspx" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+						➔ जाति, आय, निवास प्रमाण पत्र सत्यापन  
+						<span class="text-[10px] ml-1 bg-blue-100 px-1 rounded"></span>
+						</a>
+						</li>
+						                     
                     </ul>
                 </div>
 
@@ -108,3 +138,55 @@
 
 </body>
 </html>
+<script type="module">
+  // Firebase SDK imports
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+
+  // Aapka unique Firebase Config (Firebase Console se copy karein)
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "baniyapar-xxxxx.firebaseapp.com",
+    projectId: "baniyapar-xxxxx",
+    storageBucket: "baniyapar-xxxxx.appspot.com",
+    messagingSenderId: "xxxxxx",
+    appId: "xxxxxx"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const storage = getStorage(app);
+
+  // --- Real Login Logic ---
+  window.checkPassword = async () => {
+    const email = "admin@baniyapar.com"; // Fixed admin email
+    const password = document.getElementById('admin-password').value;
+    
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      document.getElementById('login-section').classList.add('hidden');
+      document.getElementById('admin-dashboard').classList.remove('hidden');
+    } catch (error) {
+      alert("Login Failed: " + error.message);
+    }
+  };
+
+  // --- Real Photo Upload Logic ---
+  window.uploadImage = async () => {
+    const file = document.getElementById('image-input').files[0];
+    if(!file) return alert("Photo select karein!");
+
+    const storageRef = ref(storage, 'gallery/' + file.name);
+    
+    try {
+      const snapshot = await uploadBytes(storageRef, file);
+      const url = await getDownloadURL(snapshot.ref);
+      alert("Photo Upload Ho Gayi! Link: " + url);
+      // Ab is URL ko aap Firestore mein save karke gallery mein dikha sakte hain
+    } catch (error) {
+      alert("Upload Error: " + error.message);
+    }
+  };
+</script>
