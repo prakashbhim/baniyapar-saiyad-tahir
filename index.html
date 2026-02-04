@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baniyapar Saiyad Tahir</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baniyapar Saiyad Tahir | Gram Panchayat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hindi:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Hindi', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<header class="top-header">
-  <div class="logo">
-    <div class="logo-circle">BST</div>
-    <div>
-      <h1>Baniyapar Saiyad Tahir</h1>
-      <p>Digital Gaon • Parampara • Vikas</p>
-    </div>
-  </div>
-</header>
+    <nav class="sticky top-0 z-50 bg-white shadow-sm px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-green-700 tracking-tight">Baniyapar <span class="text-orange-600">Saiyad Tahir</span></div>
+        <ul class="hidden md:flex space-x-8 font-medium">
+            <li><a href="#home" class="hover:text-green-700 transition">Mukhya Prishth</a></li>
+            <li><a href="#about" class="hover:text-green-700 transition">Hamara Gaon</a></li>
+            <li><a href="#facilities" class="hover:text-green-700 transition">Suvidhayein</a></li>
+            <li><a href="#contact" class="hover:text-green-700 transition">Sampark</a></li>
+        </ul>
+        <button class="bg-green-700 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-green-800 transition">Help-Line</button>
+    </nav>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="people.html">People</a>
-  <a href="schemes.html">Schemes</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <section id="home" class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Baniyapar Saiyad Tahir Mein Aapka Swagat Hai</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">Prakriti ki god mein basa, paramparaon se juda aur pragati ki ore badhta hamara pyara gaon.</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#about" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full font-bold transition">Gaon Darshan</a>
+                <a href="#facilities" class="bg-white text-gray-900 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Suvidhayein</a>
+            </div>
+        </div>
+    </section>
 
-<!-- HERO WITH BACKGROUND IMAGE -->
-<section class="hero-bg">
-  <div class="hero-overlay">
-    <h2>🌾 Hamare Gaon me Aapka Swagat Hai 🌾</h2>
-    <p>
-      Baniyapar Saiyad Tahir –  
-      ek aisa gaon jahan sanskriti, ekta aur vikas sath chalte hain
-    </p>
-  </div>
-</section>
+    <section class="py-12 bg-green-700 text-white">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><h3 class="text-3xl font-bold">5000+</h3><p class="text-sm opacity-80">Abadi (Population)</p></div>
+            <div><h3 class="text-3xl font-bold">1200+</h3><p class="text-sm opacity-80">Ghar (Houses)</p></div>
+            <div><h3 class="text-3xl font-bold">95%</h3><p class="text-sm opacity-80">Saksharta (Literacy)</p></div>
+            <div><h3 class="text-3xl font-bold">24/7</h3><p class="text-sm opacity-80">Bijli (Electricity)</p></div>
+        </div>
+    </section>
 
-<!-- DECORATIVE INFO CARDS -->
-<section class="info-section">
-  <div class="info-card">
-    <h3>📍 Gaon Ki Pehchaan</h3>
-    <p>Ek shant aur sanskritik gaon, jo apni ekta ke liye jana jata hai.</p>
-  </div>
+    <section id="facilities" class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16 underline decoration-orange-500 underline-offset-8">Gaon Ki Mukhya Suvidhayein</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-green-600 hover:-translate-y-2 transition duration-300">
+                <div class="text-4xl mb-4">🏫</div>
+                <h3 class="text-xl font-bold mb-3">Shiksha (Education)</h3>
+                <p class="text-gray-600">Hamare gaon mein prathmik aur uccha madhyamik vidyalaya behtarin shiksha pradan karte hain.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-orange-500 hover:-translate-y-2 transition duration-300">
+                <div class="text-4xl mb-4">🚜</div>
+                <h3 class="text-xl font-bold mb-3">Krishi (Agriculture)</h3>
+                <p class="text-gray-600">Adhunik kheti aur sinchai ki suvidhaon ke saath hamare kisan desh ka pet bharte hain.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-blue-500 hover:-translate-y-2 transition duration-300">
+                <div class="text-4xl mb-4">🏥</div>
+                <h3 class="text-xl font-bold mb-3">Swasthya (Health)</h3>
+                <p class="text-gray-600">24 ghante prathmik swasthya kendra aur ambulance ki suvidha uplabdha hai.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="info-card">
-    <h3>👥 Samajik Ekta</h3>
-    <p>Har dharm aur varg ke log mil-jul kar rehte hain.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>🚜 Vikas Ki Ore</h3>
-    <p>Sadak, bijli, shiksha aur digital pehchaan ki taraf kadam.</p>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© 2026 Baniyapar Saiyad Tahir | Designed with ❤️ for Village</p>
-</footer>
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Baniyapar Saiyad Tahir Panchayat</h2>
+                <p class="opacity-70 mb-4">Dist: [Aapka District Name], State: [Aapka State Name]</p>
+                <p class="text-orange-400">Email: info@baniyapar.com</p>
+            </div>
+            <div class="text-right">
+                <p class="mb-4">Humein Social Media Par Follow Karein</p>
+                <div class="flex justify-end gap-4 text-2xl">
+                    <span class="cursor-pointer hover:text-orange-500">f</span>
+                    <span class="cursor-pointer hover:text-orange-500">t</span>
+                    <span class="cursor-pointer hover:text-orange-500">i</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-gray-800 text-sm opacity-50">
+            &copy; 2024 Baniyapar Saiyad Tahir. Designed with ❤️ for Village Pride.
+        </div>
+    </footer>
 
 </body>
 </html>
